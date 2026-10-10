@@ -1,0 +1,5 @@
+stdip = 1
+while stdip == 1:
+    name = input('Enter your name: ')
+    m1 = input('Enter your mark: ')
+    stdip = int(input('Enter value 1 to continue: '))

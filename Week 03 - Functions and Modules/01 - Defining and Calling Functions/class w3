@@ -1,0 +1,8 @@
+def check():
+    result = "OK"
+    print(result)
+    result = result + "one"
+    return result
+check()
+result1 = check()
+print(result1)
