@@ -1,0 +1,5 @@
+Ali,AI&DS,65
+Mary,AI&DS,91
+Sara,IT,30
+John,CYBERSECURITY,76
+Ahmed,IT,82

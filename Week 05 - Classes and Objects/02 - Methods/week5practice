@@ -1,0 +1,32 @@
+class student:
+    def __init__(self,name,dob,program,mark):
+        self.name = name
+        self.dob = dob
+        self.program = program
+        self.mark = mark
+    def grade(self):
+        if self.mark >= 40:
+            print("Passed")
+        else:
+            print("Failed")
+    def getAge(self):
+        print(self.dob)
+
+std1 = student("Ali","SEP2/1992","AI&DS",90)
+std2 = student("Lala","NOV25/2030","IT",22)
+
+std1.grade()
+std1.getAge()
+
+std2.grade()
+std2.getAge()
+
+class hobby:
+    def __init__(self,name,hobby):
+        self.name = name
+        self.hobby = hobby
+
+stdh = hobby("Lala","Badminton")
+stdh2 = hobby("Sarah", "Sewing")
+print(stdh.hobby)
+print(stdh2.hobby)

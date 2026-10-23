@@ -1,0 +1,22 @@
+class Student:
+    def __init__(self,name,program,mark):
+        self.name = name
+        self.program = program
+        self.mark = mark
+
+students = []
+
+with open("studentdata.txt","r") as file:
+    for line in file:
+        name,program,mark = line.strip().split(",")
+        s= Student(name,program,int(mark))
+        students.append(s)
+
+print("STUDENT DETAILS")
+print("--------------------------")
+for student in students:
+    print("Name:",student.name)
+    print("Program:",student.program)
+    print("Mark:",student.mark)
+    print("--------------------------")
+print("Total Students:",len(students))
