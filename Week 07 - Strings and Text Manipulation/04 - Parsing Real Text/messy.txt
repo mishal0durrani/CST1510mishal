@@ -1,0 +1,4 @@
+  SERVER1 , used=87 , total=100
+SERVER2,used=120,total=100
+  server3,used=45 ,total=100
+Server4 , used = 93 , total=100
