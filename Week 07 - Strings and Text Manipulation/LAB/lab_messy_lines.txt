@@ -1,5 +1,5 @@
   Survey_2026 , rating=4 , age=23  
-survery2023,rating=120,age=19
-  survery2024,rating=45 ,age=20
-SURVERY2025 , rating = 93 , age=21
- Survey2022,rating=84, age=2 
+survey_2023,rating=120,age=19
+  survey_2024,RATing=45 ,age=20
+SURVEY_2025 , rating = 93 , age=21
+ Survey_2022,raTing=84, aGe=2 

@@ -28,16 +28,16 @@ def parse_line(raw_line):
     surveyPart, rest = line.split(",", 1)
     surveyName = surveyPart.strip().lower()
 
-    fields = {}
+    records = {"survey":surveyName}
     for piece in rest.split(","):
         key, value = piece.split("=")
-        fields[key.strip().lower()] = float(value.strip())
-    return {"survey": surveyName, "rating": fields["rating"], "age": fields["age"]}
+        records[key.strip().lower()] = float(value.strip())
+    return records
 
 def status_of(rating, good_at=90):
     """Returns GREAT, OK, OR POOR for a rating"""
     if rating >= good_at:
-        return "GREAT"
+        return "EXCELLENT"
     elif rating >= 50:
         return "OK"
     else:
@@ -62,7 +62,7 @@ with open("D:\\CST1510\\CST1510mishal\\Week 07 - Strings and Text Manipulation\\
         total_count += 1
         if status == "BAD":
             bad_count += 1
-        print(f"Survey:{record['survey']}||Age:{record['age']}||Rating: {record['rating']}||Status: {status_of(record['rating'])}")
+        print(f"Survey:{record['survey']}||Age:{record['age']}||Rating: {record['rating']}||Status: {status}")
  
 print(f"Total records: {total_count}, Low rated (BAD): {bad_count}")           
         
